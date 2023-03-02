@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* ::::: début header :::::::::::::::: */
+.titre{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 4px 1px rgb(182, 182, 182);;
+    position: relative;
+    padding: 10px;
+}
+.titre img{
+    height: 50px;
+    width: 250px;
+}
+.location{
+    background-color: rgb(219, 218, 218);;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+nav{
+    background-color: rgb(238, 238, 238);
+    padding-top: 70px;
+    height: 450px;
+    text-align: center;
+}
+nav h1{
+    font-weight: 700;
+    margin: 20px;
+    font-size: xx-large;
+    margin-bottom: 40px;
+}
+nav .description{
+    font-size: x-large;
+    font-weight: 300;
+}
+
+nav h1,.description,.bouton{
+    display: flex;
+    justify-content: center;
+
+}
+.bouton a{
+    margin-top: 15px;
+    padding: 1.5em;
+    border-radius: 100px;
+    background-color: rgb(196, 65, 196);
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.413);
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    margin-top: 50px;
+    width: 250px;
+    color: #ffff;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+.bouton:hover{
+    transform: scale(1.1);
+}
+/* ::::: fin header :::::::::::::::: */
+/* ::::: début fonctionnement ::::::::::: */
+main{
+    margin-top: 50px;
+}
+.global-fonction h2{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ol{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.fonction{
+    border-radius: 50px;
+    width: 30%;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 3px 19px 3px rgb(107, 105, 105);
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+.number{
+    transform: translate(-45px);
+    position: absolute;
+    background-color: #9356dc;
+    color: #ffff;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.fonction:hover{
+    background-color: #57525555;
+}
+.fonction:hover i{
+    color: #9356dc;
+    cursor: pointer;
+}
+/* :::: fin fonctionnement ::::::::: */
+/* :::::::: debut restaurant */
+.global-restau{
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    margin-top: 60px;
+    
+   
+}
+.global-restau .titre-name{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.restau-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+figure{
+    height: 200px;
+    width: 300px;
+    background-color: #ffff;
+    border-radius: 25px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+figure img{
+    display: flex;
+    height: 200px;
+    width: 300px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.new{
+    background-color: rgb(157, 241, 202);
+    display: flex;
+    transform: translate(200px,-180px);
+    width: 80px;
+    justify-content: center;
+    color: rgb(52, 80, 67);
+    border-radius: 3px;
+    padding: 5px;
+}
+.restau-name{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    transform: translate(0,-88px);
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: black;
+    text-indent: 10px;
+}
+a{
+    text-decoration: none;
+}
+.gras{
+    font-weight: 700;
+}
+.restau-name2{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    transform: translate(0,-59px);
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: black;
+    text-indent: 10px;
+}
+.coeur{
+   transform: translate(245px,-25px);
+   font-size: 24px;
+   /* position: relative; */
+   /* background-image: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+   -webkit-background-clip: text;
+   background-clip: icon; */
+}
+.coeur:hover{
+    background-image: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   font-weight: 700;
+}
+.coeur:active{
+    background-image: linear-gradient(162deg, #d68bc1 0%, #7d44c2 100%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   font-weight: 700;
+}
+
+/* ::::::::: Fin du restaurants ::::::::  */
+/* ::::::::: Debut footer ::::::::: */
+footer{
+    background-color: rgb(41, 40, 40);
+    color: #ffff;
+    
+}
+footer ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: flex-start;
+}
+h3{
+    font-family: 'Shrikhand', cursive;
+}
