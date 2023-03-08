@@ -5,25 +5,6 @@
     font-family: 'Roboto', sans-serif;
     
 }
-/* ////////// début loader-Spiner/////////////// */
-.contain-loader{
-    background: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-.dot{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background:linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-}
-
-/* ::::: début header :::::::::::::::: */
 .titre{
     display: flex;
     justify-content: center;
@@ -138,7 +119,6 @@ ol{
     padding: 20px;
     margin-top: 60px;
     
-   
 }
 .global-restau .titre-name{
     width: 100%;
@@ -147,7 +127,23 @@ ol{
 .restau-card{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.restau-top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.restau-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 figure{
     height: 200px;
@@ -163,7 +159,7 @@ figure img{
     height: 200px;
     width: 300px;
     border-radius: 25px;
-    object-fit: cover;
+    object-fit:cover;
 }
 .new{
     background-color: rgb(157, 241, 202);
@@ -256,4 +252,21 @@ h3{
 .info-footer .indent{
     transform: translate(20px, 0px)
 }
-
+/* /////fin footer/////////////// */
+/*//////// Début média q ///////*/
+@media (max-width : 1300px) {
+    ol{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        gap: 20px;
+        
+    }
+    .fonction{
+        width: 100%;
+    }
+}

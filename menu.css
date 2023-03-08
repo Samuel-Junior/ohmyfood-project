@@ -122,11 +122,12 @@ main img{
     opacity: 0;
     animation: apparition 2s 0.8s forwards;
 }
-.titre h4{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+.content4{
+    transform:translateY(50px);
+    opacity: 0;
+    animation: apparition 2s 1s forwards;
 }
+
 h4{
     text-indent: 20px;
     margin-top: 10px;
@@ -134,10 +135,14 @@ h4{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    width: 100%;
+    transition: 1s ease-in-out;
+    
 }
 .description{
     display: flex;
     justify-content: space-between;
+   
 }
 .description p{
     width: 100%;
@@ -145,9 +150,13 @@ h4{
     overflow: hidden;
     white-space: nowrap;
     text-indent: 20px;
+    transition: 1s ease-in-out;
 }
 .content:hover .description p{
     width: calc(100% / 3 );
+}
+.content:hover h4{
+    width: calc(100% / 2 );
 }
 strong{
     display: flex;
