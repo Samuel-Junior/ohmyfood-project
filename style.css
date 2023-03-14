@@ -5,6 +5,28 @@
     font-family: 'Roboto', sans-serif;
     
 }
+/* loader */
+.loadscreen {
+    background: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fond 1s 3s forwards;
+}
+.main{
+    font-size: xx-large;
+    color: #ff79da;
+    animation: icone 2s 0s forwards;
+}
+
+
+/* fin loader */
+/* :::::::: début header ::::::::::::::::::: */
 .titre{
     display: flex;
     justify-content: center;
@@ -268,5 +290,20 @@ h3{
     }
     .fonction{
         width: 100%;
+    }
+}
+@keyframes fond {
+    0%{
+        opacity: 100%;
+    }
+    100% {opacity: 0%;  
+        visibility: hidden;}
+}
+@keyframes icone {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(3);
     }
 }
